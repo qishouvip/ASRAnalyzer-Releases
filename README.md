@@ -2,7 +2,7 @@
 
 ASR Analyzer is a Windows x64 desktop tool for offline speech recognition evaluation. Run local transcription, inspect waveforms and spectra, compare microphone recordings across test conditions, and export results to Excel, PDF, or Word. The interface follows the system language by default, with English and Simplified Chinese available in Settings.
 
-## Install the preview
+## Install ASR Analyzer
 
 1. Download the Windows client and the model ZIPs from [Releases](https://github.com/qishouvip/ASRAnalyzer-Releases/releases). Verify the files against `SHA256SUMS.txt` and extract them into the same writable folder. Windows automatically merges the model directories.
 2. Install 64-bit CPython 3.12 and the Microsoft Visual C++ x64 Redistributable if needed. From the extracted folder, run:
@@ -23,9 +23,9 @@ Create a project under **ASR Evaluation**, import your own recording, add the re
 
 Use the comparison page to group results by device, distance, orientation, and configuration. Character accuracy measures correct reference characters. CER also counts insertions and can exceed 100%.
 
-## Preview limitations
+## Live recording limitations
 
-The bundled models were validated with Mandarin recordings. In a three-minute real-file replay, the application preserved the captured PCM and finalized all 29 sentences. During a concurrent high-load run, recording stopped early when recognition fell behind. A 10 m sample produced final transcripts without live draft updates. Physical microphone capture has not been field-validated in this preview.
+The bundled models were validated with Mandarin recordings. In a three-minute real-file replay, the application preserved the captured PCM and finalized all 29 sentences. During a concurrent high-load run, recording stopped early when recognition fell behind. A 10 m sample produced final transcripts without live draft updates. Physical microphone capture has not been field-validated.
 
 ## Check for updates
 
